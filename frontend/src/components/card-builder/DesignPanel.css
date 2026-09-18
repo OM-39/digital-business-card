@@ -1,0 +1,356 @@
+.design-panel {
+    margin-top: 20px;
+    padding: 24px;
+
+    border: 1px solid #e7e7e2;
+    border-radius: 18px;
+
+    background: #ffffff;
+}
+
+.design-panel-header {
+    margin-bottom: 24px;
+}
+
+.design-panel-header h2 {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #171714;
+}
+
+.design-panel-header p {
+    margin: 5px 0 0;
+
+    color: #8b8b84;
+
+    font-size: 11px;
+}
+
+
+/* Sections */
+
+.design-section {
+    padding: 20px 0;
+
+    border-top: 1px solid #eeeeea;
+}
+
+.design-section:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.design-section-title {
+    margin-bottom: 13px;
+
+    color: #55554f;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+
+/* Templates */
+
+.template-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+.template-option {
+    position: relative;
+
+    padding: 8px;
+
+    border: 1px solid #e4e4df;
+    border-radius: 12px;
+
+    background: white;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.template-option:hover {
+    transform: translateY(-2px);
+
+    border-color: #cfcfc8;
+}
+
+.template-option.active {
+    border-color: #171714;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.06);
+}
+
+.template-option strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 10px;
+
+    color: #44443f;
+}
+
+
+/* Template previews */
+
+.template-preview {
+    height: 74px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.template-preview div {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+.template-preview span {
+    width: 45px;
+    height: 4px;
+
+    border-radius: 5px;
+
+    background: currentColor;
+
+    opacity: 0.35;
+}
+
+.template-modern {
+    background: #f3f3ef;
+    color: #171714;
+}
+
+.template-minimal {
+    background: #ffffff;
+    color: #111111;
+
+    border: 1px solid #eeeeee;
+}
+
+.template-dark {
+    background: #171717;
+    color: #ffffff;
+}
+
+.template-elegant {
+    background: #f4efe8;
+    color: #3a3029;
+}
+
+.template-check {
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    width: 18px;
+    height: 18px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #171714;
+
+    color: white;
+
+    font-size: 9px;
+}
+
+
+/* Colors */
+
+.color-controls {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 10px;
+}
+
+.color-control {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    color: #777770;
+
+    font-size: 10px;
+}
+
+.color-input {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 7px;
+
+    border: 1px solid #e4e4df;
+    border-radius: 9px;
+
+    background: #fafaf8;
+}
+
+.color-input input {
+    width: 28px;
+    height: 28px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.color-input code {
+    color: #55554f;
+
+    font-family: monospace;
+
+    font-size: 9px;
+}
+
+
+/* Font */
+
+.design-select-label {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    color: #777770;
+
+    font-size: 10px;
+}
+
+.design-select-label select {
+    width: 100%;
+
+    height: 40px;
+
+    padding: 0 11px;
+
+    border: 1px solid #e4e4df;
+    border-radius: 9px;
+
+    background: #fafaf8;
+
+    color: #44443f;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* Buttons */
+
+.button-style-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+.button-style-option {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 6px;
+
+    border: 1px solid #e4e4df;
+    border-radius: 10px;
+
+    background: white;
+
+    color: #777770;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+.button-style-option.active {
+    border-color: #171714;
+
+    color: #171714;
+}
+
+.button-style-demo {
+    width: 55px;
+    height: 20px;
+
+    display: block;
+
+    background: #171714;
+}
+
+.button-style-demo.rounded {
+    border-radius: 7px;
+}
+
+.button-style-demo.square {
+    border-radius: 2px;
+}
+
+.button-style-demo.pill {
+    border-radius: 999px;
+}
